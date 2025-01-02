@@ -1,0 +1,28 @@
+def main():
+    try:
+        num1 = float(input("Enter the first number: "))
+        num2 = float(input("Enter the second number: "))
+        operation = input("Enter operation (add, subtract, multiply, divide): ").strip().lower()
+
+        if operation == "add":
+            result = num1 + num2
+        elif operation == "subtract":
+            result = num1 - num2
+        elif operation == "multiply":
+            result = num1 * num2
+        elif operation == "divide":
+            if num2 != 0:
+                result = num1 / num2
+            else:
+                return "Error: Division by zero is not allowed."
+        else:
+            return "Invalid operation."
+        
+        return f"The result is: {result}"
+    except ValueError:
+        return "Invalid input. Please enter numeric values."
+
+if _name_ == "_main_":
+    print(main())
+
+    nu1 = float (input("enter your number"))
